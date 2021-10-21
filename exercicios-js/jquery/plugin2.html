@@ -10,9 +10,12 @@
 
 <body>
     <h1>Plugin #02 - Temporizador</h1>
-    <div></div>
+    <div id="div1"></div>
     <script src="js/temporizador.js"></script>
     <script>
-        // ...
+        $('#div1').temporizador({
+            mensagem: 'Um novo site',
+            horario: '18:00:00'
+        }).hide().fadeIn(3000)
     </script>
 </body>

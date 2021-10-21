@@ -22,6 +22,41 @@
     </div>
 
     <script>
-        // ...
+
+        //Pode acontecer de outro framework ou oura linguagem use o  $
+        //Essa função garante que a expressão $ é do jquery
+
+        (function ($) {
+            $.fn.interpretar = function () {
+                // Retira os dois primeiros e os dois últimos caracteres de uma string
+                const retirarChaves = s => s.substring(2, s.length - 2)
+
+                // Substitui o conteudo com .html
+                const conteudo = $(this).html()
+
+                // Chaves é uma xpressão do regex, para ler o chaves literal, é preciso 
+                // formatar com barras, o .+ no meio, siginifica que a expressão dentro 
+                // de chaves pode ter um caracter ou mais
+                const expressoesComChaves = conteudo.match(/\{\{.+\}\}/g)
+                
+                // Lê as chaves, mapeando as expressoes com chaves e passando a função de 
+                // retirar as chaves, lendo assim todas as expressões sem chaves
+                const expressoes = expressoesComChaves.map(retirarChaves)
+
+                // Seta os resultados com eval()
+                const resultados = expressoes.map(e => eval(e))
+
+                let conteudoFinal = conteudo
+
+                for (let i = 0; i < expressoesComChaves.length; i++) {
+                    conteudoFinal = conteudoFinal.replace(expressoesComChaves[i], resultados[i])
+                    
+                }
+                $(this).html(conteudoFinal)
+                return this
+            }
+        })(jQuery)
+
+        $('div').interpretar()
     </script>
 </body>
