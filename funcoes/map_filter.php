@@ -11,8 +11,10 @@ foreach($notas as $nota) {
 print_r($notasFinais1);
 
 echo '<br>';
+// array_map => transforma os valores de um array
 $notasFinais2 = array_map(round, $notas);
 print_r($notasFinais2);
+
 
 $apenasOsAprovados1 = [];
 foreach($notas as $nota) {
@@ -38,5 +40,6 @@ function calculoLegal($nota) {
 }
 
 echo '<br>';
+// O map recebe a função antes do parametro
 $notasFinais3 = array_map(calculoLegal, $notas);
 print_r($notasFinais3);

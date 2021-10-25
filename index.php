@@ -30,6 +30,10 @@
                         <li><a href="exercicio.php?dir=funcoes&file=arg_padrao">Argumento padrão</a></li>
                         <li><a href="exercicio.php?dir=funcoes&file=usando_tipos">Usando tipos</a></li>
                         <li><a href="exercicio.php?dir=funcoes&file=anonimas">Funções Anônimas</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=closure_callable">Closure & Callable</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=fatorial">Fatorial</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=desafio_recursao">Desafio recursão</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=map_filter">Map & filter</a></li>
                     </ul>
                 </div>
                 <div class="modulo verde-escuro">

@@ -18,6 +18,7 @@ echo (is_callable(soma2) ? 'Sim' : 'Não') . '<br>';
 
 var_dump($soma1);
 
+// Callable permite passar mais de uma função nos argumetos de outro função
 function executar1($a, $b, $op, Callable $funcao) {
     $resultado = $funcao($a, $b) ?? 'Nada';
     echo "$a $op $b = $resultado<br>";
