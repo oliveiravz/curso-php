@@ -24,6 +24,12 @@
                     <h3>7. Funções</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=funcoes&file=escopo">Função e Escopo</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=args_retorno">Argumento e Retorno</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=palindromo">Desafio Palíndromo</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=args_variaveis">Argumentos variáveis</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=arg_padrao">Argumento padrão</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=usando_tipos">Usando tipos</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=anonimas">Funções Anônimas</a></li>
                     </ul>
                 </div>
                 <div class="modulo verde-escuro">

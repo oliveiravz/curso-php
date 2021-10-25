@@ -8,6 +8,8 @@ function soma($a, $b) {
 echo soma(14, 15) . '<br>';
 echo soma(6, 5, 4) . '<br>';
 
+
+// ...$numeros => Junta todos os valores dentro de um array
 function somaCompleta(...$numeros) {
     $soma = 0;
     foreach($numeros as $num) {

@@ -1,6 +1,8 @@
 <div class="titulo">Argumentos & Retorno</div>
 
 <?php
+
+// A função return é mais usada pq dá mais possibilidades de uso
 function obterMensagem() {
     return 'Seja bem vindo(a)!';
 }
@@ -32,6 +34,8 @@ function trocarValor($a, $novoValor) {
     $a = $novoValor;
 }
 
+
+// Por padrão passa o valor da variável de uma função por cópia e não por referencia
 $variavel = 1;
 trocarValor($variavel, 3);
 echo '<br>', $variavel;

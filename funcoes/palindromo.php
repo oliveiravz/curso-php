@@ -18,6 +18,7 @@ echo palindromo('bola') . ' ';
 echo '<br>';
 
 function palindromoSimples($palavra) {
+    // strrev = string reverso
     return $palavra === strrev($palavra) ? 'Sim': 'Não';
 }
 
