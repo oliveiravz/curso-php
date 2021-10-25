@@ -14,7 +14,7 @@
 <body class="exercicio">
     <header class="cabecalho">
         <h1>Curso PHP</h1>
-        <h2>Visualização do exercício</h2>
+        <h2>Visualização do Exercício</h2>
     </header>
     <nav class="navegacao">
         <a href=<?="{$_GET['dir']}/{$_GET['file']}.php"?> class="verde">Sem formatação</a>
