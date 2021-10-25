@@ -20,12 +20,38 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
+                <div class="modulo vermelho-escuro">
+                    <h3>7. Funções</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=funcoes&file=escopo">Função e Escopo</a></li>
+                    </ul>
+                </div>
+                <div class="modulo verde-escuro">
+                    <h3>6. Repetições</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=repeticoes&file=for">Laço for</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_for">Desafio for</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=foreach">Foreach</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=break_continue">Break/Continue</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_impressao">Desafio Impressão</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=while">While/Do while</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_tabela">Desafio Tabela</a></li>
+                        <li><a href="exercicio.php?dir=repeticoes&file=desafio_tabela_2">Desafio Tabela #2</a></li>
+                    </ul>
+                </div>
                 <div class="modulo roxo">
                     <h3>5. Arrays</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=array&file=basico">Básico</a></li>
-                        <li><a href="">Exercício B</a></li>
-                        <li><a href="">Exercício C</a></li>
+                        <li><a href="exercicio.php?dir=array&file=mapa">Mapas</a></li>
+                        <li><a href="exercicio.php?dir=array&file=desafio_index">Desafio Índice</a></li>
+                        <li><a href="exercicio.php?dir=array&file=desafio_meses">Desafio Meses</a></li>
+                        <li><a href="exercicio.php?dir=array&file=desafio_sorteio">Desafio Sorteio</a></li>
+                        <li><a href="exercicio.php?dir=array&file=multi">Arrays Multidimensionais</a></li>
+                        <li><a href="exercicio.php?dir=array&file=constantes">Arrays Constantes</a></li>
+                        <li><a href="exercicio.php?dir=array&file=get">$_GET</a></li>
+                        <li><a href="exercicio.php?dir=array&file=post">$_POST</a></li>
+                        <li><a href="exercicio.php?dir=array&file=comparacao">Comparacao de arrays</a></li>
                     </ul>
                 </div>
                 <div class="modulo azul">

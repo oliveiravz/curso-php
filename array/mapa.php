@@ -31,6 +31,8 @@ $lista = array(
 echo '<br>';
 print_r($lista);
 
+
+// acrescenta elemento na lista
 $lista[] = 'i';
 echo '<br>';
 print_r($lista);

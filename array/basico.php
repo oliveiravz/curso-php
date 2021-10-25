@@ -7,22 +7,20 @@ var_dump($lista);
 echo '<br>';
 print_r($lista);
 
-echo "<br>";
-echo "<br>";
-echo "Inicio do foreach";
-echo "<br>";
+echo "<hr>";
 
-echo "<table border='1'>";
-echo "<tr>";
-echo "<th>Tabela</th>";
-echo "</tr>";
-echo "<tr>";
-foreach ($lista as $chaves => $valores) {
-    echo "<td>$valores</td>";
+echo "<table border=1>";
+echo "<tr>TABELA</tr>";
+foreach($lista as $valores) {
+    echo "<tr>";
+    echo "<td>$valores";
+
 }
+echo "</td>";
 echo "</tr>";
 echo "</table>";
 
+echo "<hr>";
 $lista[0] = 1234;
 print_r($lista);
 

@@ -10,6 +10,8 @@ $dados2 = [
     "naturalidade" => "Fortaleza"
 ];
 
+// É possível adicionar valores a um array
+// passando a $variavelDoArray['nova chave'] = novo valor;
 $dados2["endereço"] = "Rua A";
 
 $dadosCompletos = $dados1 + $dados2;
@@ -40,10 +42,12 @@ $decimais = $pares + $impares;
 echo '<br>';
 print_r($decimais);
 
+// Une todos os elementos dos arrays S
 $decimais = array_merge($pares, $impares);
 echo '<br>';
 print_r($decimais);
 
+// Altera o array original 
 sort($decimais);
 echo '<br>';
 print_r($decimais);
