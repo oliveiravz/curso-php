@@ -141,3 +141,6 @@ body {
 
 .modulo.roxo-escuro { border: 2px solid #4a14bc; }
 .modulo.roxo-escuro > h3 { background-color: #4a14bc; }
+
+.modulo.laranja-escuro { border: 2px solid #E65527; }
+.modulo.laranja-escuro > h3 { background-color: #E65527; }
