@@ -209,3 +209,12 @@ body {
     padding: 5px 10px;
     margin-right: 10px;
 }
+
+span.usuario {
+    flex-grow: 1;
+    justify-content: flex-start;
+    color: #fff;
+    padding-left: 15px;
+    font-size: 1.4rem;
+    font-weight: 300;
+} 
