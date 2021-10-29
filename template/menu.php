@@ -1,8 +1,18 @@
 <nav class="modulos">
+    <div class="modulo vermelho">
+        <h3>11. Tratamento de erro</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=sessao&file=basico_sessao">Basico Sessão</a></li>
+            <li><a href="exercicio.php?dir=sessao&file=gerenciador_sessao">Gerenciando Sessão</a></li>
+        </ul>
+    </div>
     <div class="modulo verde">
         <h3>11. Tratamento de erro</h3>
         <ul>
             <li><a href="exercicio.php?dir=tratamento_erro&file=basico">Basico</a></li>
+            <li><a href="exercicio.php?dir=tratamento_erro&file=erros_personalizados">Erros personalizados</a></li>
+            <li><a href="exercicio.php?dir=tratamento_erro&file=desafio_intdiv">Desafio IntDiv</a></li>
+            <li><a href="exercicio.php?dir=tratamento_erro&file=error_handler">Error Handler</a></li>
         </ul>
     </div>
     <div class="modulo laranja-escuro">

@@ -7,12 +7,13 @@ body {
     height: 100vh;
     margin: 0px;
     display: grid;
-    grid-template-rows: 120px 1fr 60px;
+    grid-template-rows: 120px 60px 1fr 60px;
     grid-template-columns: 1fr;
     grid-template-areas: 
-                "cabecalho" 
-                "principal"
-                "rodape";
+                    "cabecalho" 
+                    "navegacao" 
+                    "principal" 
+                    "rodape";
 }
 
 .cabecalho {
@@ -25,24 +26,25 @@ body {
     align-items: center;
     padding-bottom: 10px;
     z-index: 1;
-    box-shadow: 0px 4px 9px -2px rgba(0, 0, 0, 75);   
-
+    box-shadow: 0px 4px 9px -2px rgba(0, 0, 0, 75);
 }
 
-.cabecalho > h1 {
+.cabecalho>h1 {
     margin: 0;
     font-weight: 300;
     font-size: 2.8rem;
 }
 
-.cabecalho > h2 {
+.cabecalho>h2 {
     margin: 0;
     font-weight: 200;
     font-size: 1.6em;
 }
+
 .principal {
     grid-area: principal;
-    height: calc(100vh - 180px);
+    /* height: calc(100vh - 180px); */
+    height: calc(100vh - 240px);
     background-color: #f0f0f0;
     padding: 20px;
 }
@@ -65,15 +67,12 @@ body {
     font-size: 1.2rem;
     padding-right: 20px;
     color: #444;
-
 }
-
 
 .modulos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .modulo {
@@ -82,65 +81,131 @@ body {
     border-radius: 5px;
 }
 
-.modulo > h3 {
+.modulo>h3 {
     margin: 0px;
     color: #fff;
     font-weight: 300;
     font-size: 1.5rem;
     padding: 10px 20px;
     background-color: #1867c0;
-
 }
 
-.modulo > ul {
+.modulo>ul {
     margin: 0px;
     padding: 10px;
     list-style: none;
 }
 
-.modulo > ul > li {
+.modulo>ul>li {
     padding: flex;
     font-size: 1.3rem;
     cursor: pointer;
 }
 
-.modulo > ul > li > a {
+.modulo>ul>li>a {
     display: flex;
     text-decoration: none;
     color: #222;
-
 }
 
-.modulo > ul > li:hover {
+.modulo>ul>li:hover {
     background-color: #EEE;
 }
 
-.modulo.verde { border: 2px solid #4CAF50; }
-.modulo.verde > h3 { background-color: #4CAF50; }
+.modulo.verde {
+    border: 2px solid #4CAF50;
+}
 
-.modulo.vermelho { border: 2px solid #fa0101; }
-.modulo.vermelho > h3 { background-color: #fa0101; }
+.modulo.verde>h3 {
+    background-color: #4CAF50;
+}
 
-.modulo.azul { border: 2px solid #2196f3; }
-.modulo.azul > h3 { background-color: #2196f3; }
+.modulo.vermelho {
+    border: 2px solid #fa0101;
+}
 
-.modulo.roxo { border: 2px solid #9c27b0; }
-.modulo.roxo > h3 { background-color: #9c27b0; }
+.modulo.vermelho>h3 {
+    background-color: #fa0101;
+}
 
-.modulo.laranja { border: 2px solid #ff9080; }
-.modulo.laranja > h3 { background-color: #ff9080; }
+.modulo.azul {
+    border: 2px solid #2196f3;
+}
 
-.modulo.verde-escuro { border: 2px solid #185e20; }
-.modulo.verde-escuro > h3 { background-color: #185e20; }
+.modulo.azul>h3 {
+    background-color: #2196f3;
+}
 
-.modulo.vermelho-escuro { border: 2px solid #b71c1c; }
-.modulo.vermelho-escuro > h3 { background-color: #b71c1c; }
+.modulo.roxo {
+    border: 2px solid #9c27b0;
+}
 
-.modulo.azul-escuro { border: 2px solid #0d47a1; }
-.modulo.azul-escuro > h3 { background-color: #0d47a1; }
+.modulo.roxo>h3 {
+    background-color: #9c27b0;
+}
 
-.modulo.roxo-escuro { border: 2px solid #4a14bc; }
-.modulo.roxo-escuro > h3 { background-color: #4a14bc; }
+.modulo.laranja {
+    border: 2px solid #ff9080;
+}
 
-.modulo.laranja-escuro { border: 2px solid #E65527; }
-.modulo.laranja-escuro > h3 { background-color: #E65527; }
+.modulo.laranja>h3 {
+    background-color: #ff9080;
+}
+
+.modulo.verde-escuro {
+    border: 2px solid #185e20;
+}
+
+.modulo.verde-escuro>h3 {
+    background-color: #185e20;
+}
+
+.modulo.vermelho-escuro {
+    border: 2px solid #b71c1c;
+}
+
+.modulo.vermelho-escuro>h3 {
+    background-color: #b71c1c;
+}
+
+.modulo.azul-escuro {
+    border: 2px solid #0d47a1;
+}
+
+.modulo.azul-escuro>h3 {
+    background-color: #0d47a1;
+}
+
+.modulo.roxo-escuro {
+    border: 2px solid #4a14bc;
+}
+
+.modulo.roxo-escuro>h3 {
+    background-color: #4a14bc;
+}
+
+.modulo.laranja-escuro {
+    border: 2px solid #E65527;
+}
+
+.modulo.laranja-escuro>h3 {
+    background-color: #E65527;
+}
+
+.navegacao {
+    grid-area: navegacao;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #555;
+}
+
+.navegacao>a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    background-color: #2196f3;
+    padding: 5px 10px;
+    margin-right: 10px;
+}

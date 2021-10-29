@@ -1,10 +1,4 @@
-<?php
-session_start();
 
-if(!$_SESSION['usuario']) {
-    header('Location: login.php');
-}
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,14 +16,26 @@ if(!$_SESSION['usuario']) {
 <body>
     <header class="cabecalho">
         <h1>Curso PHP</h1>
-        <h2>Índice de Exercícios</h2>
+        <h2>Seja Bem Vindo</h2>
     </header>
-    <nav class="navegacao">
-        
-    </nav>
     <main class="principal">
         <div class="conteudo">
-            <?=include 'template/menu.php'?>
+            <h3>Identifique - se</h3>
+            <?php if($_SESSION['erros']){ ?>
+                <?php foreach( $_SESSION['erros'] as $erro){?>
+                    <p><?= $erro ?></p>
+                <?php } ?>
+            <?php }?>
+            <form action="#" method="post">
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+            </form>
         </div>
     </main>
     <?php include 'template/footer.php'; ?>
