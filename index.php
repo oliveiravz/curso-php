@@ -32,7 +32,7 @@ if(!$_SESSION['usuario']) {
         <span class="usuario">
             Olá, <?= $_SESSION['usuario']?>
         </span>
-            <a href="logout.php">Sair</a>
+        <a class="vermelho" href="logout.php">Sair</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
@@ -41,5 +41,4 @@ if(!$_SESSION['usuario']) {
     </main>
     <?php include 'template/footer.php'; ?>
 </body>
-
 </html>

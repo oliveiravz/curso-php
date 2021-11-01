@@ -218,3 +218,5 @@ span.usuario {
     font-size: 1.4rem;
     font-weight: 300;
 } 
+
+.navegacao > a.vermelho { background-color: #fa0101; }
