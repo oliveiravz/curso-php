@@ -15,9 +15,9 @@ print_r($_SESSION);
 
 
 <p>
-    <a href="exercicio.php?dir=sessao&file=basico_sessao.php">Voltar</a>
+    <a href="exercicio.php?dir=sessao&file=basico_sessao">Voltar</a>
 </p>
 
 <p>
-    <a href="basico_sessao_limpar.php">Limpar Sessão</a>
+    <a href="exercicio.php?dir=sessao&file=basico_sessao_limpar">Limpar Sessão</a>
 </p>
