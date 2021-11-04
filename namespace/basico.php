@@ -7,7 +7,6 @@
 // Para referenciar o namespace atual, usa-se:
 echo __NAMESPACE__. '<br>';
 
-
 /* 
     Quando criada dessa forma o php automaticamente atrela a constante 
     ao namespace que está no arquivo atual

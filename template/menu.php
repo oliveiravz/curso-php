@@ -7,6 +7,7 @@
             <li><a href="exercicio.php?dir=db&file=inserir_1">Inserir Registro #01 </a></li>
             <li><a href="exercicio.php?dir=db&file=consulta">Consultar Registro #01 </a></li>
             <li><a href="exercicio.php?dir=db&file=excluir_registro">Excluir Registro #01 </a></li>
+            <li><a href="exercicio.php?dir=db&file=excluir_registro2">Excluir Registro #02 </a></li>
     </div>
     <div class="modulo azul">
         <h3>14. Formulários</h3>

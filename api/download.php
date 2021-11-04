@@ -13,7 +13,7 @@ $tmp = $_FILES['arquivo']['tmp_name'];
 if (move_uploaded_file($tmp, $arquivo)) {
     echo "<br>Arquivo válido e enviado com sucesso.";
     $arquivos[] = $nomeArquivo;
-    $_SESSION['arquivos'] = $arquivos;
+    $_SESSION['arquivo'] = $arquivos;
 } else {
     echo "<br>Erro no upload de arquivo!";
 }

@@ -1,42 +1,43 @@
-<div class="titulo">Imagens</div>
+<div class="titulo">Desafio imagens</div>
 
-<?php 
+<?php
+
 session_start();
 
+// Array para guardar informações da imagem
 $arquivos = $_SESSION['arquivos'] ?? [];
 
-// $pastaUpload = __DIR__ . '/../files/';
-$pastaUpload = "exercicio.php?dir=files&file=";
+$pastaUpload = __DIR__ . '/../files/';
 $nomeArquivo = $_FILES['arquivo']['name'];
 $arquivo = $pastaUpload . $nomeArquivo;
-$tmp = $_FILES['arquivos']['tmp_name'];
+$tmp = $_FILES['arquivo']['tmp_name'];
 
-
-if (move_uploaded_file($tmp, $arquivo)) {
-    echo "<br>Arquivo válido e enviado com sucesso.";
+if(move_uploaded_file($tmp, $arquivo)) {
+    echo "<br>Arquivo válido enviado com sucesso";
     $arquivos[] = $nomeArquivo;
     $_SESSION['arquivos'] = $arquivos;
-} else {
-    echo "<br>Erro no upload de arquivo!";
+}else{
+    echo "<br>Erro no upload do arquivo: Inválido";
 }
 ?>
 
 <form action="#" method="post" enctype="multipart/form-data">
-    <input name="arquivo" type="file">
+    <input type="file" name="arquivo">
     <button>Enviar</button>
 </form>
 
+
 <ul>
-    <?php foreach($arquivos as $arquivo){ ?>
-        <?php if(stripos($arquivo, '.jpg') > 0){ ?>
+    <?php foreach($arquivos as $arquivo){?>
+        <?php if(stripos($arquivo, '.png') > 0){ ?>
             <li>
-                <a href="/../files/<?= $arquivo ?>">
-                    <img src="/../files/<?= $arquivo ?>"/>
-                </a>
+                <!-- Não precisa voltar uma pasta para mostrar as imagens na tela -->
+                <img src="files/<?= $arquivo ?>" height="120"/>
             </li>
         <?php } ?>
     <?php } ?>
 </ul>
+
 
 <style>
     input, button {

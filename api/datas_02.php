@@ -12,7 +12,7 @@ $agora = new DateTime();
 
 echo $agora->format($formatoData1) . '<br>';
 
-setlocale(LC_TIME, 'pt_BR');
+setlocale(LC_TIME, "pt_BR.UTF8");
 echo strftime($formatoData2, $agora->getTimestamp()) . '<br>';
 
 $dataFixa = new DateTime('1975-01-25 15:30:50');

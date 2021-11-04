@@ -6,7 +6,7 @@ require_once "conexao.php";
 
 $sql = "INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
         VALUES
-        ('Deise', '1986-11-03', 'deise@email.com', 'https://deisesite.com.br', 0, 18000)";
+        ('Victor', '1994-05-07', 'victor@email.com', 'https://victorsite.com.br', 0, 18000)";
 
 $conn = novaConexao();
 $res = $conn->query($sql);
