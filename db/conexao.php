@@ -2,7 +2,7 @@
 
 
 function novaConexao($banco = 'curso_php'){
-    $servidor = '127.0.0.1';
+    $servidor = 'localhost';
     $usuario = 'joaovictor';
     $senha = '123';
 

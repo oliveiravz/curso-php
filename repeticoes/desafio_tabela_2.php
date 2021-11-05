@@ -24,9 +24,9 @@
         if(!$colunas) $colunas = 10;
 
         $num = 1;
-        for($i = 0; $i < $linhas; $i++) {
+        for($i = 0; $i <= $linhas; $i++) {
             echo "<tr>";
-            for($j = 0; $j < $colunas; $j++) {
+            for($j = 0; $j <= $colunas; $j++) {
                 echo "<td>$num</td>";
                 $num++;
             }

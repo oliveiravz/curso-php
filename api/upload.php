@@ -6,11 +6,10 @@ print_r($_FILES);
 
 //$_FILES: array que trás informações da imagem a ser carregada
 if($_FILES && $_FILES['arquivo']) {
-    $pastaUpload = 'curso-php/files/';
+    $pastaUpload = '/var/www/html/curso-php/files/';
     $nomeArquivo = $_FILES['arquivo']['name'];
     $arquivo = $pastaUpload . $nomeArquivo;
-    $tmp = $_FILES['arquivo']['tmp_name'];;
-
+    $tmp = $_FILES['arquivo']['tmp_name'];
     // move_uploaded_file() => move arquivo para caminho selecionado
     if (move_uploaded_file($tmp, $arquivo)) {
         echo "<br>Arquivo válido e enviado com sucesso.";
@@ -20,8 +19,7 @@ if($_FILES && $_FILES['arquivo']) {
 }
 ?>
 
-<form action="#" method="post"
-    enctype="multipart/form-data">
+<form action="#" method="post" enctype="multipart/form-data">
     <input name="arquivo" type="file">
     <button>Enviar</button>
 </form>
