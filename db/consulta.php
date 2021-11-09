@@ -8,8 +8,6 @@ $sql = "SELECT id, nome, nascimento, email FROM  cadastro";
 
 $conn = novaConexao();
 $res = $conn->query($sql);
-
-
 $registros = [];
 
 if($res->num_rows > 0){

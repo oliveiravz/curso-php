@@ -7,7 +7,7 @@ require_once "conexao.php";
 
 $conn = novaConexao(null);
 
-$sql = 'CREATE DATABASE IF NOT EXISTS curso_php';
+$sql = "CREATE DATABASE IF NOT EXISTS curso_php";
 
 $res = $conn->query($sql);
 

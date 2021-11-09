@@ -8,7 +8,13 @@
             <li><a href="exercicio.php?dir=db&file=consulta">Consultar Registro #01 </a></li>
             <li><a href="exercicio.php?dir=db&file=excluir_registro">Excluir Registro #01 </a></li>
             <li><a href="exercicio.php?dir=db&file=excluir_registro2">Excluir Registro #02 </a></li>
-    </div>
+            <li><a href="exercicio.php?dir=db&file=inserir_2">Inserir Registro #02 </a></li>
+            <li><a href="exercicio.php?dir=db&file=alterar">Alterar</a></li>
+            <li><a href="exercicio.php?dir=db&file=pdo_inserir">PDO: Inserir</a></li>
+            <li><a href="exercicio.php?dir=db&file=pdo_consultar">PDO: Consultar</a></li>
+            <li><a href="exercicio.php?dir=db&file=pdo_excluir">PDO: Excluir</a></li>
+            <li><a href="exercicio.php?dir=db&file=pdo_alterar">PDO: Alterar</a></li>
+        </div>
     <div class="modulo azul">
         <h3>14. Formulários</h3>
         <ul>
